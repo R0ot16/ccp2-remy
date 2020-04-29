@@ -1,0 +1,381 @@
+/**
+    FONT AND TYPO
+**/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Libre Baskerville';
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 !important;
+}
+
+a,
+p {
+    font-size: 14px;
+}
+
+a {
+    color: #803300;
+}
+
+li:hover {
+    background-color: #E65C00;
+}
+
+.tab {
+    margin-left: 2em;
+}
+
+
+/**
+    SLIDER ACTUS
+**/
+.caption h3 {
+    background: linear-gradient(to right, black, transparent);
+}
+
+.slider .slides li .caption {
+    top: 0;
+    left: 0;
+}
+
+/*
+*   PRINCIPAL AND SECONDARY COLOR THEME (BACKGROUND)
+*/
+
+.bg-color-primary {
+    background-color: #ff6600
+}
+
+.bg-color-secondary {
+    background-color: #E65C00;
+}
+
+.bg-color-third {
+    background-color: #803300;
+}
+
+.bg-color-four {
+    background-color: #401A00;
+}
+
+/*
+*   PRINCIPAL COLORS TEXT
+*/
+
+.text-primary {
+    color: #333333;
+}
+
+.input-field label {
+    font-weight: bold;
+    color: black;
+}
+
+/***
+    NAVIGATION ET ZOOM + ET - SUR LA GAUCHE DE L'ECRAN
+***/
+.fixed-left{
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    color: #ff6600;
+    z-index: 10000;
+}
+
+.sticky-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+nav {
+    height: auto;
+}
+
+.zoom-text {
+    position: fixed;
+    z-index: 1000;
+    right: -4vw;
+    top: 55vh;
+    background-color: #ff6600;
+    transition: all 0.5s ease-in-out;
+}
+
+.zoom-text:hover{
+    right: 0;
+}
+
+.zoom-text img:first-of-type {
+    width: 60%;
+}
+
+.zoom-text img:last-child {
+    width: 80%;
+}
+
+.zoom-text img {
+    cursor: pointer;
+}
+
+.sidenav{
+    z-index: 9999 !important;
+}
+
+/**
+    BUTTON AND INPUT COLOR
+**/
+
+.btn-agency {
+    background-color: #E65C00;
+    border-radius: 15px;
+}
+
+.btn-agency:hover {
+    background-color: #803300;
+}
+
+.btn-call-action {
+    margin-bottom: 1.5em;
+    padding: 1em;
+    height: auto;
+    font-size: 1em;
+    border: 3px solid yellow;
+    box-shadow: 2px 2px 2px black;
+}
+
+.btn:focus,
+.btn-large:focus,
+.btn-small:focus,
+.btn-floating:focus {
+    background-color: #803300;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #E65C00;
+    box-shadow: 0 1px 0 0 #E65C00;
+}
+
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #E65C00;
+}
+
+/**
+    CAROUSEL BACKGROUND
+**/
+.carousel {
+    background-color: #ff6600;
+}
+
+
+/**
+    FIX BUG CAROUSEL ITEM WITH VISIBILITY HIDDEN
+**/
+.carousel .carousel-item {
+    visibility: visible;
+}
+
+/**
+    RESET MARGIN FOR TITLE CAROUSEL
+**/
+.carousel .title-carousel h3 {
+    margin: 0;
+}
+
+/**
+    FIX MARGE
+**/
+.carousel .card {
+    margin: 0;
+}
+
+/**
+    CARD 
+**/
+.card .card-image {
+    height: 10vh;
+    overflow: hidden;
+}
+
+.card .card-image img {
+    width: 100%;
+}
+
+
+/**
+    VISUAL FOR TITLE CARD
+**/
+.card .card-image .card-title {
+    background: linear-gradient(to right, black, transparent);
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/**
+    FOOTER
+**/
+
+.page-footer img {
+    width: 100%;
+}
+
+/**
+*   HELPERS
+*/
+.categ-one{
+    height: 50vh !important;
+}
+
+.row .categ-one::after{
+    content: none;
+}
+
+.slider, .slides{
+    height: 50vh !important;
+}
+
+.separator{
+    width: 70%;
+    text-align: center;
+}
+
+.rounded{
+    border-radius: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+#goup {
+    position: fixed;
+    right: 3vw;
+    bottom: 4vh;
+    background-color: #ff6600;
+    padding: 1em;
+}
+
+/**
+    HIDE LOGO ZOOM TEXT WHEN OPEN SIDENAV  
+**/
+.sidenav {
+    z-index: 1001;
+}
+
+/**
+    FORMULAIRE CONNEXION / INSCRIPTION
+**/
+.formulaire .card-title{
+    background-color: #ff6600;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+
+.formulaire .row .col {
+    padding: 0 !important;
+}
+
+.formulaire .card-content .row{
+    padding: 0.75em !important;
+}
+
+.formulaire .card{
+    border-radius: 15px;
+    margin: 1em;
+}
+
+
+/**
+    NOTIF DISPLAY
+**/
+
+.show-error{
+    position: fixed;
+    bottom: 30px;
+    width: 50%;
+    left: 25%;
+    transition: all 0.5s ease-in-out;
+    z-index: 9999;
+}
+
+.show-error .card-title{
+    background: red;
+}
+
+.hide-error{
+    bottom: -150px;
+}
+
+#success .card-title{
+    background-color: green !important;
+}
+
+/**
+ ADAPTATION SUIVANT LES TYPES D'ÉCRANS
+**/
+
+@media all and (width: 1024px) and (orientation: landscape) {
+    nav .brand-logo {
+        top: 5%;
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 650px) {
+    nav .brand-logo {
+        position: relative;
+    }
+}
+
+@media all and (max-width: 500px) {
+    nav .brand-logo {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 14px !important;
+    }
+}
+
+@media all and (min-width: 1600px) {
+    .carousel .carousel-item {
+        width: 30vw;
+    }
+}
