@@ -1,0 +1,13 @@
+# INSTALLATION
+- clone git repository dans le dossier racine : (xampp, wamp, mamp)
+- Aller sur PhpMyAdmin puis creer une base de donnée nommée "ccp2"
+- importer le fichier ccp2.sql dans la base ccp2
+- Lancer votre serveur (xampp, wamp, mamp)
+- connectez vous avec : 
+- - email : admin@admin.fr
+- - pass : root
+- Pour les droits, aller dans la table "users" puis changer la colone "level" :
+- - 0 : Utilisateur
+- - 1 : Rédacteur
+- - 2 : Responsable editorial
+- - 3 : Admin
